@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>iGame New</title>
+  </head>
+  <body dir="rtl">
+    <!-- header -->
+    <header class="bg-white py-4 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)]">
+      <div class="container m-auto flex items-center">
+        <a href="/src/index.html">
+          <img
+            src="/src/assets/images/Logo.svg"
+            alt="آی گیم | مرجع خرید درون بازی، گیفت کارت و اکانت پرمیوم"
+            width="113"
+            height="29"
+          />
+        </a>
+        <div class="relative mr-3 hidden basis-1/2 items-center sm:flex">
+          <input
+            type="text"
+            placeholder="جستجو در آی گیم ..."
+            name="search"
+            id="search"
+            class="font-demibold block w-full rounded-full border border-[#CBD5E1] bg-gray-50 px-5 py-2.5 text-sm text-gray-900 shadow-sm outline-none transition-all placeholder:text-textColor focus:border-indigo-500 focus:ring-inset focus:ring-indigo-600"
+          />
+        </div>
+
+        <div class="mr-auto flex items-center">
+          <button
+            class="group mr-2 hidden rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor sm:block"
+          >
+            <svg
+              class="stroke-gray-900 transition-all group-hover:stroke-white"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.0002 8.5001C16.0002 12.3702 12.6402 15.5002 8.50011 15.5002L7.5701 16.6202L7.02009 17.2803C6.55008 17.8403 5.65006 17.7202 5.34006 17.0502L4.00004 14.1002C2.18002 12.8201 1 10.7901 1 8.5001C1 4.63004 4.36005 1.5 8.50011 1.5C11.5201 1.5 14.1302 3.17003 15.3002 5.57006C15.7502 6.46008 16.0002 7.45008 16.0002 8.5001Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 12.3601C21 14.6502 19.82 16.6802 18 17.9603L16.6599 20.9102C16.3499 21.5803 15.4499 21.7103 14.9799 21.1403L13.4999 19.3602C11.0799 19.3602 8.91984 18.2902 7.56982 16.6202L8.49983 15.5002C12.6399 15.5002 15.9999 12.3702 15.9999 8.5001C15.9999 7.45009 15.7499 6.46008 15.2999 5.57007C18.57 6.32008 21 9.0801 21 12.3601Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.99976 8.50012H10.9998"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- empty cart -->
+          <!-- <button
+              class="group mr-2 inline-block rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+            >
+              <svg
+                class="transition-all group-hover:fill-white"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7417 19.4584H6.25007C4.81674 19.4584 3.74174 19.075 3.07507 18.3167C2.4084 17.5584 2.14174 16.4584 2.31674 15.0334L3.06674 8.78335C3.2834 6.94169 3.75007 5.29169 7.00007 5.29169H12.9917C16.2334 5.29169 16.7001 6.94169 16.9251 8.78335L17.6751 15.0334C17.8417 16.4584 17.5917 17.5667 16.9251 18.3167C16.2334 19.075 15.1667 19.4584 13.7251 19.4584H13.7417ZM7.00007 6.54169C4.60007 6.54169 4.4834 7.48335 4.3084 8.92502L3.5584 15.175C3.4334 16.2334 3.57507 17.0084 4.00007 17.4834C4.42507 17.9584 5.17507 18.2 6.24174 18.2H13.7251C14.7917 18.2 15.5417 17.9584 15.9667 17.4834C16.3917 17.0084 16.5417 16.2334 16.4167 15.175L15.6667 8.92502C15.4917 7.47502 15.3834 6.54169 12.9751 6.54169H6.9834H7.00007Z"
+                  fill="text-gray-900"
+                />
+                <path
+                  d="M13.3334 7.79169C12.9917 7.79169 12.7084 7.50835 12.7084 7.16669V4.25002C12.7084 3.35002 12.1501 2.79169 11.2501 2.79169H8.75008C7.85008 2.79169 7.29175 3.35002 7.29175 4.25002V7.16669C7.29175 7.50835 7.00841 7.79169 6.66675 7.79169C6.32508 7.79169 6.04175 7.50835 6.04175 7.16669V4.25002C6.04175 2.65835 7.15841 1.54169 8.75008 1.54169H11.2501C12.8417 1.54169 13.9584 2.65835 13.9584 4.25002V7.16669C13.9584 7.50835 13.6751 7.79169 13.3334 7.79169Z"
+                />
+                <path
+                  d="M17.0084 15.3167H6.66675C6.32508 15.3167 6.04175 15.0334 6.04175 14.6917C6.04175 14.35 6.32508 14.0667 6.66675 14.0667H17.0084C17.3501 14.0667 17.6334 14.35 17.6334 14.6917C17.6334 15.0334 17.3501 15.3167 17.0084 15.3167Z"
+                />
+              </svg>
+            </button> -->
+
+          <button
+            class="group relative mr-2 inline-block rounded-lg border border-redColor bg-redColor px-2 py-2 transition-all"
+          >
+            <span
+              class="absolute right-[-4px] top-[-4px] h-3 w-3 rounded-full border border-white bg-redColor"
+            ></span>
+            <svg
+              class="fill-white transition-all"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.7417 19.4584H6.25007C4.81674 19.4584 3.74174 19.075 3.07507 18.3167C2.4084 17.5584 2.14174 16.4584 2.31674 15.0334L3.06674 8.78335C3.2834 6.94169 3.75007 5.29169 7.00007 5.29169H12.9917C16.2334 5.29169 16.7001 6.94169 16.9251 8.78335L17.6751 15.0334C17.8417 16.4584 17.5917 17.5667 16.9251 18.3167C16.2334 19.075 15.1667 19.4584 13.7251 19.4584H13.7417ZM7.00007 6.54169C4.60007 6.54169 4.4834 7.48335 4.3084 8.92502L3.5584 15.175C3.4334 16.2334 3.57507 17.0084 4.00007 17.4834C4.42507 17.9584 5.17507 18.2 6.24174 18.2H13.7251C14.7917 18.2 15.5417 17.9584 15.9667 17.4834C16.3917 17.0084 16.5417 16.2334 16.4167 15.175L15.6667 8.92502C15.4917 7.47502 15.3834 6.54169 12.9751 6.54169H6.9834H7.00007Z"
+                fill="text-gray-900"
+              />
+              <path
+                d="M13.3334 7.79169C12.9917 7.79169 12.7084 7.50835 12.7084 7.16669V4.25002C12.7084 3.35002 12.1501 2.79169 11.2501 2.79169H8.75008C7.85008 2.79169 7.29175 3.35002 7.29175 4.25002V7.16669C7.29175 7.50835 7.00841 7.79169 6.66675 7.79169C6.32508 7.79169 6.04175 7.50835 6.04175 7.16669V4.25002C6.04175 2.65835 7.15841 1.54169 8.75008 1.54169H11.2501C12.8417 1.54169 13.9584 2.65835 13.9584 4.25002V7.16669C13.9584 7.50835 13.6751 7.79169 13.3334 7.79169Z"
+              />
+              <path
+                d="M17.0084 15.3167H6.66675C6.32508 15.3167 6.04175 15.0334 6.04175 14.6917C6.04175 14.35 6.32508 14.0667 6.66675 14.0667H17.0084C17.3501 14.0667 17.6334 14.35 17.6334 14.6917C17.6334 15.0334 17.3501 15.3167 17.0084 15.3167Z"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="group mr-2 inline-block rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+          >
+            <svg
+              class="stroke-gray-900 transition-all group-hover:stroke-white"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.6287 20.3181C15.8221 20.5565 14.8687 20.6665 13.7504 20.6665H8.2504C7.13207 20.6665 6.17874 20.5565 5.37207 20.3181C5.57374 17.9348 8.02124 16.0556 11.0004 16.0556C13.9796 16.0556 16.4271 17.9348 16.6287 20.3181Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.7499 2.33331H8.24992C3.66659 2.33331 1.83325 4.16665 1.83325 8.74998V14.25C1.83325 17.715 2.87825 19.6125 5.37159 20.3183C5.57325 17.935 8.02075 16.0558 10.9999 16.0558C13.9791 16.0558 16.4266 17.935 16.6283 20.3183C19.1216 19.6125 20.1666 17.715 20.1666 14.25V8.74998C20.1666 4.16665 18.3333 2.33331 13.7499 2.33331ZM10.9999 13.4891C9.18492 13.4891 7.71825 12.0133 7.71825 10.1983C7.71825 8.38333 9.18492 6.91665 10.9999 6.91665C12.8149 6.91665 14.2816 8.38333 14.2816 10.1983C14.2816 12.0133 12.8149 13.4891 10.9999 13.4891Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.2816 10.1984C14.2816 12.0134 12.8149 13.4892 10.9999 13.4892C9.18493 13.4892 7.71826 12.0134 7.71826 10.1984C7.71826 8.38337 9.18493 6.91669 10.9999 6.91669C12.8149 6.91669 14.2816 8.38337 14.2816 10.1984Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="group mr-2 block rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor sm:hidden"
+          >
+            <svg
+              width="20"
+              height="20"
+              class="fill-gray-900 transition-all group-hover:fill-white"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5 6.45831H2.5C2.15833 6.45831 1.875 6.17498 1.875 5.83331C1.875 5.49165 2.15833 5.20831 2.5 5.20831H17.5C17.8417 5.20831 18.125 5.49165 18.125 5.83331C18.125 6.17498 17.8417 6.45831 17.5 6.45831Z"
+              />
+              <path
+                d="M17.5 10.625H2.5C2.15833 10.625 1.875 10.3417 1.875 10C1.875 9.65833 2.15833 9.375 2.5 9.375H17.5C17.8417 9.375 18.125 9.65833 18.125 10C18.125 10.3417 17.8417 10.625 17.5 10.625Z"
+              />
+              <path
+                d="M17.5 14.7916H2.5C2.15833 14.7916 1.875 14.5083 1.875 14.1666C1.875 13.825 2.15833 13.5416 2.5 13.5416H17.5C17.8417 13.5416 18.125 13.825 18.125 14.1666C18.125 14.5083 17.8417 14.7916 17.5 14.7916Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- navigation -->
+    <nav class="container mx-auto hidden sm:flex">
+      <ul
+        class="flex flex-1 snap-proximity overflow-x-auto whitespace-nowrap py-4 pb-5 text-sm text-slate-500 scrollbar-hide"
+      >
+        <li class="ml-3 flex pl-3 font-medium text-blue-700">
+          <a class="tracking-tight" href="/" title="محصولات آی گیم"
+            >محصولات آی گیم
+          </a>
+        </li>
+        <li class="ml-6">
+          <a href="/">خرید از گوگل پلی و اپ استور</a>
+        </li>
+        <li class="ml-6"><a href="/">مجله آی گیم</a></li>
+        <li class="ml-6"><a href="/">تماس با ما</a></li>
+      </ul>
+      <a
+        class="hidden items-center font-medium sm:flex"
+        dir="ltr"
+        href="tel:+982191005060"
+      >
+        <svg
+          class="mr-3"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.4869 15.4242C18.4869 15.7271 18.4196 16.0385 18.2765 16.3414C18.1335 16.6443 17.9483 16.9304 17.7043 17.1997C17.292 17.6541 16.8376 17.9823 16.3243 18.1926C15.8194 18.403 15.2725 18.5124 14.6835 18.5124C13.8252 18.5124 12.908 18.3104 11.9403 17.8981C10.9726 17.4858 10.0049 16.9304 9.04567 16.232C8.07798 15.5252 7.16079 14.7426 6.28567 13.8759C5.41896 13.0008 4.6364 12.0836 3.93798 11.1243C3.24798 10.1651 2.69262 9.20579 2.28871 8.25493C1.88481 7.29567 1.68286 6.37847 1.68286 5.50335C1.68286 4.93115 1.78384 4.3842 1.98579 3.87933C2.18774 3.36603 2.5075 2.89481 2.95347 2.47408C3.49201 1.94396 4.08103 1.68311 4.70371 1.68311C4.93932 1.68311 5.17493 1.73359 5.3853 1.83457C5.60408 1.93554 5.79762 2.08701 5.94908 2.30579L7.90128 5.05737C8.05274 5.26774 8.16213 5.46128 8.23786 5.6464C8.31359 5.82311 8.35567 5.99981 8.35567 6.15969C8.35567 6.36164 8.29676 6.56359 8.17896 6.75713C8.06957 6.95067 7.90969 7.15262 7.70774 7.35457L7.06823 8.01932C6.97567 8.11189 6.93359 8.22128 6.93359 8.35591C6.93359 8.42323 6.94201 8.48213 6.95884 8.54945C6.98408 8.61676 7.00932 8.66725 7.02615 8.71774C7.17762 8.99542 7.43847 9.35725 7.80871 9.79481C8.18737 10.2324 8.59127 10.6783 9.02884 11.1243C9.48323 11.5703 9.92079 11.9826 10.3668 12.3613C10.8043 12.7315 11.1662 12.984 11.4523 13.1354C11.4943 13.1523 11.5448 13.1775 11.6037 13.2027C11.671 13.228 11.7383 13.2364 11.8141 13.2364C11.9571 13.2364 12.0665 13.1859 12.1591 13.0933L12.7986 12.4623C13.009 12.2519 13.2109 12.092 13.4044 11.991C13.598 11.8732 13.7915 11.8143 14.0019 11.8143C14.1618 11.8143 14.3301 11.848 14.5152 11.9237C14.7003 11.9994 14.8938 12.1088 15.1042 12.2519L17.8894 14.2293C18.1082 14.3808 18.2597 14.5575 18.3522 14.7679C18.4364 14.9782 18.4869 15.1886 18.4869 15.4242Z"
+            stroke="#334155"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M13.631 6.56356H17.67M13.631 6.56356V2.52454V6.56356Z"
+            stroke="#334155"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="mr-1 font-light">(۰۲۱)</span> ۹۱۰۰۵۰۶۰
+      </a>
+    </nav>
+    <!-- breadcrumb -->
+    <div class="relative border-t py-5">
+      <div class="container mx-auto">
+        <ul
+          class="relative flex items-center text-xs font-medium text-[#334155]/50"
+        >
+          <a href=""> آی‌گیم </a>
+          <svg
+            class="mx-2"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.75">
+              <path
+                d="M5.00003 6.64002L2.82336 4.46669C2.56669 4.21002 2.56669 3.79002 2.82336 3.53336L4.99669 1.35669"
+                stroke="#969DA9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+          <a class="text-slate-700" href="">حساب کاربــــری</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="container mx-auto grid grid-cols-12 items-stretch gap-4 ">
+      <!-- side  -->
+      <div
+        class="col-span-12 rounded-t-2xl md:col-span-4 md:block md:bg-white md:py-7 md:px-2 md:shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] lg:col-span-3 xl:col-span-2 2xl:p-5"
+      >
+        <div
+          class="flex flex-col rounded-2xl bg-white p-5 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:p-0 md:shadow-none"
+        >
+          <div
+            class="order-1 flex flex-row items-center justify-start md:flex-col md:justify-center"
+          >
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded-full md:h-20 md:w-20"
+            >
+              <img
+                src="./assets/images/avatar.png"
+                alt=""
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <span class="mr-2 block text-base font-bold md:mr-0 md:mt-3">
+              صابر صابــــــــــرزاده
+            </span>
+            <span
+              class="mr-auto text-sm font-medium text-slate-700/80 md:mr-0 md:mt-1"
+              >۰۹۱۷۱۲۳۴۵۶۷</span
+            >
+          </div>
+
+          <button
+            class="btn order-3 mt-5 hidden w-full flex-1 rounded-md bg-blue-700 text-xs font-medium text-white md:order-2 md:block"
+          >
+            ثبت ایمیل
+          </button>
+
+          <div
+            class="order-2 mt-3 hidden rounded-md bg-[#10B981] px-3 py-3 text-white md:order-3 md:block 2xl:px-5"
+          >
+            <div class="flex items-start">
+              <div class="ml-2 md:mt-2">
+                <svg
+                  class="fill-white/50"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.01597 8.01374C3.17443 8.01374 1.66828 9.51989 1.66828 11.3614V18.8464C1.66828 20.688 3.17443 22.1941 5.01597 22.1941H17.7839C19.6254 22.1941 21.1316 20.688 21.1316 18.8464V18.3571H19.8526C18.2849 18.3571 16.7633 17.2107 16.6194 15.5173C16.5296 14.5584 16.8947 13.6626 17.5273 13.0408C18.0963 12.4604 18.8765 12.1289 19.7191 12.1289H21.1316V11.3614C21.1316 9.51989 19.6254 8.01374 17.7839 8.01374H5.01597ZM0 11.3614C0 8.59853 2.25305 6.34546 5.01597 6.34546H17.7839C20.5468 6.34546 22.7999 8.59853 22.7999 11.3614V12.963C22.7999 13.4237 22.4264 13.7971 21.9657 13.7971H19.7191C19.3198 13.7971 18.9686 13.952 18.7152 14.2122L18.7002 14.2272C18.4043 14.516 18.239 14.9273 18.2806 15.3641L18.2816 15.3739L18.2815 15.3739C18.3403 16.0801 19.0194 16.6888 19.8526 16.6888H21.9657C22.4264 16.6888 22.7999 17.0623 22.7999 17.5229V18.8464C22.7999 21.6094 20.5468 23.8624 17.7839 23.8624H5.01597C2.25305 23.8624 0 21.6094 0 18.8464V11.3614Z"
+                    fill=""
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.7355 2.95296C13.7355 2.05484 12.8379 1.43826 12.007 1.75322L3.17576 5.08995C2.26736 5.43385 1.66828 6.30115 1.66828 7.27938V12.362C1.66828 12.8227 1.29482 13.1962 0.834141 13.1962C0.373458 13.1962 0 12.8227 0 12.362V7.27938C0 5.61074 1.02492 4.12007 2.58537 3.52963L11.4157 0.193235C11.4155 0.193296 11.4159 0.193174 11.4157 0.193235C13.3428 -0.536841 15.4038 0.892822 15.4038 2.95296V7.17926C15.4038 7.63994 15.0304 8.0134 14.5697 8.0134C14.109 8.0134 13.7355 7.63994 13.7355 7.17926V2.95296Z"
+                    fill=""
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.7167 13.7969C19.3174 13.7969 18.9662 13.9518 18.7128 14.212L18.6978 14.227C18.4019 14.5158 18.2366 14.9271 18.2782 15.3639L18.2792 15.3737L18.2791 15.3737C18.338 16.0799 19.017 16.6886 19.8502 16.6886H22.0109C22.1907 16.677 22.3081 16.5364 22.3081 16.3884V14.0972C22.3081 13.9491 22.1907 13.8085 22.0109 13.7969H19.7167ZM17.5249 13.0406C18.0939 12.4603 18.8741 12.1287 19.7167 12.1287H22.0301C22.04 12.1287 22.0499 12.1288 22.0598 12.1292C23.1197 12.167 23.9764 13.0247 23.9764 14.0972V16.3884C23.9764 17.4608 23.1197 18.3185 22.0598 18.3564C22.0499 18.3567 22.04 18.3569 22.0301 18.3569H19.8502C18.2825 18.3569 16.7609 17.2106 16.617 15.5172C16.5272 14.5582 16.8923 13.6624 17.5249 13.0406Z"
+                    fill=""
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.00391 11.9059C5.00391 11.4452 5.37736 11.0718 5.83805 11.0718H13.6234C14.084 11.0718 14.4575 11.4452 14.4575 11.9059C14.4575 12.3666 14.084 12.7401 13.6234 12.7401H5.83805C5.37736 12.7401 5.00391 12.3666 5.00391 11.9059Z"
+                    fill=""
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-1 items-center justify-between md:block">
+                <span class="block text-xs">موجودی کیف‌پول</span>
+                <span class="block text-sm">
+                  <b class="text-lg"> ۱٫۰۰۰٫۰۰۰</b>
+                  تومان
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="font-regular mt-5 flex w-full snap-proximity flex-row items-stretch overflow-x-auto whitespace-nowrap pb-2 text-xs scrollbar-hide md:snap-none md:flex-col md:pb-0 md:text-sm"
+        >
+          <li
+            class="mx-2 my-2 flex items-center rounded-md bg-white px-4 py-2 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block text-[#FF3333]" href=""> پنل کاربری </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              لیست سفارشات
+            </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              ثبت سفارش
+            </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              احراز هویت
+            </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              کیف پول من
+            </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              جزییات حساب کاربری
+            </a>
+          </li>
+          <li
+            class="group mx-2 my-2 flex items-center rounded-md bg-white px-4 py-1 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="ml-2 hidden h-1 w-3 rounded-sm bg-gray-300 transition-all group-hover:bg-[#FF3333]/20 md:block"
+            ></div>
+            <a class="block transition-all group-hover:text-[#FF3333]" href="">
+              خروج از حساب کاربری
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- body-content -->
+      <div class="col-span-12 gap-2 md:col-span-8 lg:col-span-9 xl:col-span-10">
+        <div>
+          <div class="mt-3 md:-mt-7 mb-3">
+            <span class="block text-base font-bold mb-2">جزییات حساب کاربری</span>
+            <p class="font-regular text-xs text-slate-700/80">
+              در زمان وارد کردن اطلاعات حساب کاربری، دقت و اطمینان لازم را داشته
+              باشیدو درصورت نیاز اطلاعات خود را ویرایش کنید.
+            </p>
+          </div>
+         
+          <div
+            class="rounded-lg p-0 sm:bg-white sm:px-3 sm:py-16 sm:shadow-lg xl:px-24"
+          >
+            <span class="block text-sm font-bold"
+              >اطلاعات خود را وارد کنید</span
+            >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
+              <div class="order-1">
+                <label for="" class="mb-2 block text-xs"
+                  >نام
+                  <span class="text-[#FF3333]"> *</span></label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-lg border-2 border-gray-200 p-3"
+                />
+              </div>
+              <div class="order-3 lg:order-2">
+                <div class="my-3 flex items-center">
+                    <svg
+                      class="ml-2"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="17" cy="17" r="17" fill="#FEE2E2" />
+                      <path
+                        d="M16.9996 14.45V16.15M16.9996 19.55H17.0081M11.1108 22.95H22.8884C24.1974 22.95 25.0151 21.533 24.3606 20.4L18.4718 10.2C17.8173 9.06693 16.1819 9.06693 15.5274 10.2L9.63862 20.4C8.98412 21.533 9.80182 22.95 11.1108 22.95Z"
+                        stroke="#FF3333"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="font-medium flex-1 text-xs text-[#FF3333]">
+                        توجــــــــه: به دلیل اختلالات پیش آمده در دسترسی به سیستم پیامک در کشور، لطفا ایمیل خود را وارد و تایید کنید تا در صورت قطع شدن سیستم پیامک، بتوانید وارد حساب آی گیم خود شوید. لطفا در صورت عدم دریافت ایمیل فولدر spam را چک کنید.
+                    </p>
+                  </div>
+              </div>
+              <div class="order-2 lg:order-3">
+                <label for="" class="mb-2 block text-xs"
+                  >نام خانوادگی
+                  <span class="text-[#FF3333]"> *</span></label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-lg border-2 border-gray-200 p-3"
+                />
+              </div>
+              <div class="order-4">
+                <label for="" class="mb-2 block text-xs"
+                  > ایمیل
+                </label>
+                <input
+                  type="text"
+                  class="w-full rounded-lg border-2 border-gray-200 p-3"
+                />
+              </div>
+              <div class="order-5"></div>
+              <div class="order-6">
+                <button class="btn btn-blue text-xs font-bold w-full rounded-md">ذخیره تغییرات</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

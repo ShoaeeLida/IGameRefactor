@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "iranYekanX";
+  src: url("./assets/fonts/IRANYekanXVF.woff"),
+    url("./assets/fonts/IRANYekanXVF.woff2");
+}
+body {
+  color: #334155;
+  background-color: #f8fafc;
+}
+
+.half-circle{
+  width: 20px;
+  height: 9px;
+  background-color: transparent;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  border: 1px dotted gray;
+  border-top: 0;
+  transform: rotate(-10deg)
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.closeModal{
+  opacity: 0;
+  visibility:hidden;
+  display: none ;
+}
+
+.disable{
+  display: none ;
+}
+
+@layer utilities {
+  .font-thin {
+    font-variation-settings: "wght" 100;
+  }
+  .font-ultralight {
+    font-variation-settings: "wght" 200;
+  }
+  .font-light {
+    font-variation-settings: "wght" 300;
+  }
+  .font-regular {
+    font-variation-settings: "wght" 400;
+  }
+  .font-medium {
+    font-variation-settings: "wght" 500;
+  }
+  .font-demibold {
+    font-variation-settings: "wght" 600;
+  }
+  .font-bold {
+    font-variation-settings: "wght" 700;
+  }
+  .font-extrabold {
+    font-variation-settings: "wght" 800;
+  }
+  .font-extrablack {
+    font-variation-settings: "wght" 900;
+  }
+  .font-heavy {
+    font-variation-settings: "wght" 1000;
+  }
+}
+
+.custom-container{
+ /* padding-left: 10px;
+ padding-right: 10px; */
+ margin-right: auto;
+}
+
+@media (width >= 640px) {
+  .custom-container {
+    max-width: calc((100vw - 640px) / 2 + 640px);
+  }
+}
+
+@media (width >= 768px) {
+  .custom-container {
+    max-width: calc((100vw - 768px) / 2 + 768px);
+  }
+}
+
+@media (width >= 1024px) {
+  .custom-container {
+    max-width: calc((100vw - 1024px) / 2 + 1024px);
+  }
+}
+
+@media (width >= 1280px) {
+  .custom-container {
+    max-width: calc((100vw - 1280px) / 2 + 1280px);
+  }
+}
+
+@media (width >= 1536px) {
+  .custom-container {
+    max-width: calc((100vw - 1536px) / 2 + 1536px);
+  }
+}

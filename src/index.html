@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>iGame New</title>
+  </head>
+  <body dir="rtl">
+    <header class="bg-white py-4 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)]">
+      <div class="container m-auto flex items-center">
+        <a href="/src/index.html">
+          <img
+            src="/src/assets/images/Logo.svg"
+            alt="آی گیم | مرجع خرید درون بازی، گیفت کارت و اکانت پرمیوم"
+            width="113"
+            height="29"
+          />
+        </a>
+        <div class="hidden sm:flex relative mr-3  basis-1/2 items-center">
+          <input
+            type="text"
+            placeholder="جستجو در آی گیم ..."
+            name="search"
+            id="search"
+            class="font-demibold block w-full rounded-full border border-[#CBD5E1] bg-gray-50 px-5 py-2.5 text-sm text-gray-900 shadow-sm outline-none transition-all placeholder:text-textColor focus:border-indigo-500 focus:ring-inset focus:ring-indigo-600"
+          />
+        </div>
+
+        <div class="mr-auto flex items-center">
+          <button
+            class="hidden sm:block group mr-2 rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+          >
+            <svg
+              class="stroke-gray-900 transition-all group-hover:stroke-white"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.0002 8.5001C16.0002 12.3702 12.6402 15.5002 8.50011 15.5002L7.5701 16.6202L7.02009 17.2803C6.55008 17.8403 5.65006 17.7202 5.34006 17.0502L4.00004 14.1002C2.18002 12.8201 1 10.7901 1 8.5001C1 4.63004 4.36005 1.5 8.50011 1.5C11.5201 1.5 14.1302 3.17003 15.3002 5.57006C15.7502 6.46008 16.0002 7.45008 16.0002 8.5001Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 12.3601C21 14.6502 19.82 16.6802 18 17.9603L16.6599 20.9102C16.3499 21.5803 15.4499 21.7103 14.9799 21.1403L13.4999 19.3602C11.0799 19.3602 8.91984 18.2902 7.56982 16.6202L8.49983 15.5002C12.6399 15.5002 15.9999 12.3702 15.9999 8.5001C15.9999 7.45009 15.7499 6.46008 15.2999 5.57007C18.57 6.32008 21 9.0801 21 12.3601Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.99976 8.50012H10.9998"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- empty cart -->
+          <!-- <button
+            class="group mr-2 inline-block rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+          >
+            <svg
+              class="transition-all group-hover:fill-white"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.7417 19.4584H6.25007C4.81674 19.4584 3.74174 19.075 3.07507 18.3167C2.4084 17.5584 2.14174 16.4584 2.31674 15.0334L3.06674 8.78335C3.2834 6.94169 3.75007 5.29169 7.00007 5.29169H12.9917C16.2334 5.29169 16.7001 6.94169 16.9251 8.78335L17.6751 15.0334C17.8417 16.4584 17.5917 17.5667 16.9251 18.3167C16.2334 19.075 15.1667 19.4584 13.7251 19.4584H13.7417ZM7.00007 6.54169C4.60007 6.54169 4.4834 7.48335 4.3084 8.92502L3.5584 15.175C3.4334 16.2334 3.57507 17.0084 4.00007 17.4834C4.42507 17.9584 5.17507 18.2 6.24174 18.2H13.7251C14.7917 18.2 15.5417 17.9584 15.9667 17.4834C16.3917 17.0084 16.5417 16.2334 16.4167 15.175L15.6667 8.92502C15.4917 7.47502 15.3834 6.54169 12.9751 6.54169H6.9834H7.00007Z"
+                fill="text-gray-900"
+              />
+              <path
+                d="M13.3334 7.79169C12.9917 7.79169 12.7084 7.50835 12.7084 7.16669V4.25002C12.7084 3.35002 12.1501 2.79169 11.2501 2.79169H8.75008C7.85008 2.79169 7.29175 3.35002 7.29175 4.25002V7.16669C7.29175 7.50835 7.00841 7.79169 6.66675 7.79169C6.32508 7.79169 6.04175 7.50835 6.04175 7.16669V4.25002C6.04175 2.65835 7.15841 1.54169 8.75008 1.54169H11.2501C12.8417 1.54169 13.9584 2.65835 13.9584 4.25002V7.16669C13.9584 7.50835 13.6751 7.79169 13.3334 7.79169Z"
+              />
+              <path
+                d="M17.0084 15.3167H6.66675C6.32508 15.3167 6.04175 15.0334 6.04175 14.6917C6.04175 14.35 6.32508 14.0667 6.66675 14.0667H17.0084C17.3501 14.0667 17.6334 14.35 17.6334 14.6917C17.6334 15.0334 17.3501 15.3167 17.0084 15.3167Z"
+              />
+            </svg>
+          </button> -->
+
+          <button
+            class="group relative mr-2 inline-block rounded-lg border border-redColor bg-redColor px-2 py-2 transition-all"
+          >
+            <span
+              class="absolute right-[-4px] top-[-4px] h-3 w-3 rounded-full border border-white bg-redColor"
+            ></span>
+            <svg
+              class="fill-white transition-all"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.7417 19.4584H6.25007C4.81674 19.4584 3.74174 19.075 3.07507 18.3167C2.4084 17.5584 2.14174 16.4584 2.31674 15.0334L3.06674 8.78335C3.2834 6.94169 3.75007 5.29169 7.00007 5.29169H12.9917C16.2334 5.29169 16.7001 6.94169 16.9251 8.78335L17.6751 15.0334C17.8417 16.4584 17.5917 17.5667 16.9251 18.3167C16.2334 19.075 15.1667 19.4584 13.7251 19.4584H13.7417ZM7.00007 6.54169C4.60007 6.54169 4.4834 7.48335 4.3084 8.92502L3.5584 15.175C3.4334 16.2334 3.57507 17.0084 4.00007 17.4834C4.42507 17.9584 5.17507 18.2 6.24174 18.2H13.7251C14.7917 18.2 15.5417 17.9584 15.9667 17.4834C16.3917 17.0084 16.5417 16.2334 16.4167 15.175L15.6667 8.92502C15.4917 7.47502 15.3834 6.54169 12.9751 6.54169H6.9834H7.00007Z"
+                fill="text-gray-900"
+              />
+              <path
+                d="M13.3334 7.79169C12.9917 7.79169 12.7084 7.50835 12.7084 7.16669V4.25002C12.7084 3.35002 12.1501 2.79169 11.2501 2.79169H8.75008C7.85008 2.79169 7.29175 3.35002 7.29175 4.25002V7.16669C7.29175 7.50835 7.00841 7.79169 6.66675 7.79169C6.32508 7.79169 6.04175 7.50835 6.04175 7.16669V4.25002C6.04175 2.65835 7.15841 1.54169 8.75008 1.54169H11.2501C12.8417 1.54169 13.9584 2.65835 13.9584 4.25002V7.16669C13.9584 7.50835 13.6751 7.79169 13.3334 7.79169Z"
+              />
+              <path
+                d="M17.0084 15.3167H6.66675C6.32508 15.3167 6.04175 15.0334 6.04175 14.6917C6.04175 14.35 6.32508 14.0667 6.66675 14.0667H17.0084C17.3501 14.0667 17.6334 14.35 17.6334 14.6917C17.6334 15.0334 17.3501 15.3167 17.0084 15.3167Z"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="group mr-2 inline-block rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+          >
+            <svg
+              class="stroke-gray-900 transition-all group-hover:stroke-white"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.6287 20.3181C15.8221 20.5565 14.8687 20.6665 13.7504 20.6665H8.2504C7.13207 20.6665 6.17874 20.5565 5.37207 20.3181C5.57374 17.9348 8.02124 16.0556 11.0004 16.0556C13.9796 16.0556 16.4271 17.9348 16.6287 20.3181Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.7499 2.33331H8.24992C3.66659 2.33331 1.83325 4.16665 1.83325 8.74998V14.25C1.83325 17.715 2.87825 19.6125 5.37159 20.3183C5.57325 17.935 8.02075 16.0558 10.9999 16.0558C13.9791 16.0558 16.4266 17.935 16.6283 20.3183C19.1216 19.6125 20.1666 17.715 20.1666 14.25V8.74998C20.1666 4.16665 18.3333 2.33331 13.7499 2.33331ZM10.9999 13.4891C9.18492 13.4891 7.71825 12.0133 7.71825 10.1983C7.71825 8.38333 9.18492 6.91665 10.9999 6.91665C12.8149 6.91665 14.2816 8.38333 14.2816 10.1983C14.2816 12.0133 12.8149 13.4891 10.9999 13.4891Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.2816 10.1984C14.2816 12.0134 12.8149 13.4892 10.9999 13.4892C9.18493 13.4892 7.71826 12.0134 7.71826 10.1984C7.71826 8.38337 9.18493 6.91669 10.9999 6.91669C12.8149 6.91669 14.2816 8.38337 14.2816 10.1984Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+          class="block sm:hidden group mr-2 rounded-lg border border-[#CBD5E1] px-2 py-2 transition-all hover:border-redColor hover:bg-redColor"
+        >
+        <svg width="20" height="20"  class="fill-gray-900 transition-all group-hover:fill-white" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.5 6.45831H2.5C2.15833 6.45831 1.875 6.17498 1.875 5.83331C1.875 5.49165 2.15833 5.20831 2.5 5.20831H17.5C17.8417 5.20831 18.125 5.49165 18.125 5.83331C18.125 6.17498 17.8417 6.45831 17.5 6.45831Z" />
+          <path d="M17.5 10.625H2.5C2.15833 10.625 1.875 10.3417 1.875 10C1.875 9.65833 2.15833 9.375 2.5 9.375H17.5C17.8417 9.375 18.125 9.65833 18.125 10C18.125 10.3417 17.8417 10.625 17.5 10.625Z" />
+          <path d="M17.5 14.7916H2.5C2.15833 14.7916 1.875 14.5083 1.875 14.1666C1.875 13.825 2.15833 13.5416 2.5 13.5416H17.5C17.8417 13.5416 18.125 13.825 18.125 14.1666C18.125 14.5083 17.8417 14.7916 17.5 14.7916Z" />
+          </svg>
+          
+          
+        </button>
+        </div>
+      </div>
+    </header>
+    <nav class="hidden sm:flex container mx-auto ">
+      <ul
+        class="scrollbar-hide flex flex-1 snap-proximity overflow-x-auto whitespace-nowrap py-4 pb-5 text-sm text-slate-500"
+      >
+        <li class="ml-3 flex pl-3 font-medium text-blue-700">
+          <a class="tracking-tight" href="product.html" title="محصولات آی گیم"
+            >محصولات آی گیم
+          </a>
+        </li>
+        <li class="ml-6">
+          <a href="archive.html">خرید از گوگل پلی و اپ استور</a>
+        </li>
+        <li class="ml-6"><a href="cart.html">مجله آی گیم</a></li>
+        <li class="ml-6"><a href="submitOrder.html">تماس با ما</a></li>
+        <li class="ml-6"><a href="submitOrderConfirm.html">submitOrderConfirm</a></li>
+        <li class="ml-6"><a href="orderSuccess.html">orderSuccess</a></li>
+        <li class="ml-6"><a href="orderUnsuccess.html">orderUnsuccess</a></li>
+        <li class="ml-6"><a href="orderTracking.html">orderTracking</a></li>
+        <li class="ml-6"><a href="optRegister.html">optRegister</a></li>
+        <li class="ml-6"><a href="optConfirm.html">optConfirm</a></li>
+        <li class="ml-6"><a href="dashboard.html">dashboard</a></li>
+        <li class="ml-6"><a href="orders.html">orders</a></li>
+        <li class="ml-6"><a href="authentication.html">authentication</a></li>
+        <li class="ml-6"><a href="wallet.html">wallet</a></li>
+        <li class="ml-6"><a href="setting.html">setting</a></li>
+      </ul>
+      <a
+        class="hidden items-center font-medium sm:flex"
+        dir="ltr"
+        href="tel:+982191005060"
+      >
+        <svg
+          class="mr-3"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.4869 15.4242C18.4869 15.7271 18.4196 16.0385 18.2765 16.3414C18.1335 16.6443 17.9483 16.9304 17.7043 17.1997C17.292 17.6541 16.8376 17.9823 16.3243 18.1926C15.8194 18.403 15.2725 18.5124 14.6835 18.5124C13.8252 18.5124 12.908 18.3104 11.9403 17.8981C10.9726 17.4858 10.0049 16.9304 9.04567 16.232C8.07798 15.5252 7.16079 14.7426 6.28567 13.8759C5.41896 13.0008 4.6364 12.0836 3.93798 11.1243C3.24798 10.1651 2.69262 9.20579 2.28871 8.25493C1.88481 7.29567 1.68286 6.37847 1.68286 5.50335C1.68286 4.93115 1.78384 4.3842 1.98579 3.87933C2.18774 3.36603 2.5075 2.89481 2.95347 2.47408C3.49201 1.94396 4.08103 1.68311 4.70371 1.68311C4.93932 1.68311 5.17493 1.73359 5.3853 1.83457C5.60408 1.93554 5.79762 2.08701 5.94908 2.30579L7.90128 5.05737C8.05274 5.26774 8.16213 5.46128 8.23786 5.6464C8.31359 5.82311 8.35567 5.99981 8.35567 6.15969C8.35567 6.36164 8.29676 6.56359 8.17896 6.75713C8.06957 6.95067 7.90969 7.15262 7.70774 7.35457L7.06823 8.01932C6.97567 8.11189 6.93359 8.22128 6.93359 8.35591C6.93359 8.42323 6.94201 8.48213 6.95884 8.54945C6.98408 8.61676 7.00932 8.66725 7.02615 8.71774C7.17762 8.99542 7.43847 9.35725 7.80871 9.79481C8.18737 10.2324 8.59127 10.6783 9.02884 11.1243C9.48323 11.5703 9.92079 11.9826 10.3668 12.3613C10.8043 12.7315 11.1662 12.984 11.4523 13.1354C11.4943 13.1523 11.5448 13.1775 11.6037 13.2027C11.671 13.228 11.7383 13.2364 11.8141 13.2364C11.9571 13.2364 12.0665 13.1859 12.1591 13.0933L12.7986 12.4623C13.009 12.2519 13.2109 12.092 13.4044 11.991C13.598 11.8732 13.7915 11.8143 14.0019 11.8143C14.1618 11.8143 14.3301 11.848 14.5152 11.9237C14.7003 11.9994 14.8938 12.1088 15.1042 12.2519L17.8894 14.2293C18.1082 14.3808 18.2597 14.5575 18.3522 14.7679C18.4364 14.9782 18.4869 15.1886 18.4869 15.4242Z"
+            stroke="#334155"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M13.631 6.56356H17.67M13.631 6.56356V2.52454V6.56356Z"
+            stroke="#334155"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="mr-1 font-light">(۰۲۱)</span> ۹۱۰۰۵۰۶۰
+      </a>
+    </nav>
+    <div class="block sm:hidden mt-5 px-2">
+      <input
+      type="text"
+      placeholder="جستجو در آی گیم ..."
+      name="search"
+      id="search"
+      class="font-demibold block w-full rounded-full border border-[#CBD5E1] bg-gray-50 px-5 py-2.5 text-sm text-gray-900 shadow-sm outline-none transition-all placeholder:text-textColor focus:border-indigo-500 focus:ring-inset focus:ring-indigo-600"
+    />
+    </div>
+    <div class="container mx-auto mt-7">
+      <h1 class="text-center sm:text-right w-full text-lg font-bold">
+        <a
+          href="https://igame.ir/"
+          title="مرجع خرید بازی ، خرید درون بازی ، گیفت کارت ، لایسنس اورجینال و اکانت پرمیوم"
+          old-href="https://igame.ir/"
+          >فروشگاه آی گیـــــــــم</a
+        >
+      </h1>
+      <p class="text-center sm:text-right w-full mt-1 text-sm font-medium text-gray-500">
+        مرجع خرید بازی ، خرید درون بازی ، گیفت کارت ، لایسنس اورجینال و اکانت
+        پرمیوم
+      </p>
+    </div>
+    <div
+      class="scrollbar-hide m-auto mt-5 grid snap-proximity auto-cols-[18rem] grid-flow-col gap-2 overflow-x-auto px-3.5 pb-4 lg:container"
+    >
+      <a
+        href="/"
+        class=" flex flex-col justify-evenly sm:justify-center rounded-lg bg-gradient-to-bl from-[#1D4ED8] to-[#334155] py-3 sm:pl-[7rem] pl-[8rem] pr-3 text-white h-[9.3rem] sm:h-[5.6rem] w-72 relative "
+      >
+        <div
+          class="z-0 absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+        ></div>
+        <span class="block text-sm font-bold relative z-10"
+          >خریــــــــد درون بــــــــــازی</span
+        >
+        <span class="mt-1 block text-[10px] opacity-80 relative z-10">
+          خرید انواع پول درون بازی موبایل به صورت فوری</span
+        >
+        <button class="sm:hidden btn bg-white text-indigo-600 text-xs font-medium w-28 mt-3 z-10">همه محصولات</button>
+        <img
+          src="/src/assets/images/cat/Clash-Royale-Transparent.png"
+          class="hidden sm:block absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+          alt=""
+        />
+        <img
+          src="/src/assets/images/catMobile/Clash-Royale-Transparent 1 (1).png"
+          class="block sm:hidden absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+          alt=""
+        />
+      </a>
+
+      <a
+        href="/"
+        class="relative flex  flex-col justify-evenly sm:justify-center rounded-lg bg-gradient-to-bl from-[#FF3333] to-[#334155] py-3 sm:pl-[7rem] pl-[8rem] pr-3 text-white h-[9.3rem] sm:h-[5.6rem] w-72 "
+      >
+        <div
+          class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+        ></div>
+        <span class="block text-sm font-bold">
+          خریــــــــد گیفت کــــــــارت
+        </span>
+        <span class="mt-1 block text-[10px] opacity-80">
+          خرید انواع گیفت کارت در سریعترین زمان
+        </span>
+
+        <button class="sm:hidden btn bg-white text-red-600 text-xs font-medium w-28 mt-3 z-10">همه محصولات</button>
+
+        <img
+          src="/src/assets/images/cat/Mario_Artwork.png"
+          class="hidden sm:block absolute bottom-0 left-3 h-full w-fit"
+          alt=""
+        />
+        <img
+        src="/src/assets/images/catMobile/Mario_Artwork_-_Super_Mario_3D_World 2 (1).png"
+        class="block sm:hidden absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+        alt=""
+      />
+      </a>
+
+      <a
+        href="/"
+        class="relative flex  flex-col justify-evenly sm:justify-center rounded-lg bg-gradient-to-bl from-[#6D28D9] to-[#334155] py-3 sm:pl-[7rem] pl-[8rem] pr-3 text-white h-[9.3rem] sm:h-[5.6rem] w-72"
+      >
+        <div
+          class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+        ></div>
+        <span class="block text-sm font-bold"> خریــــــــد بــــــــازی </span>
+        <span class="mt-1 block text-[10px] opacity-80">
+          خرید انواع بازی به صورت کد دیجیتال</span
+        >
+        <button class="sm:hidden btn bg-white text-[#6D28D9] text-xs font-medium w-28 mt-3 z-10">همه محصولات</button>
+        <img
+          src="/src/assets/images/cat/654321.png"
+          class="hidden sm:block absolute bottom-0 left-3 h-full w-fit"
+          alt=""
+        />
+        <img
+        src="/src/assets/images/catMobile/PngItem_5365998 1 (1).png"
+        class="block sm:hidden absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+        alt=""
+      />
+      </a>
+
+      <a
+        href="/"
+        class="relative flex  flex-col justify-evenly sm:justify-center rounded-lg bg-gradient-to-bl from-[#16A34A] to-[#334155] py-3 sm:pl-[7rem] pl-[8rem] pr-3 text-white h-[9.3rem] sm:h-[5.6rem] w-72"
+      >
+        <div
+          class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+        ></div>
+        <span class="block text-sm font-bold">
+          خریــــــــد اکانت پرمیـــــــوم
+        </span>
+        <span class="mt-1 block text-[10px] opacity-80">
+          خرید انواع اکانت پرمیوم با کمترین قیمت</span
+        >
+        <button class="sm:hidden btn bg-white text-[#16A34A] text-xs font-medium w-28 mt-3 z-10">همه محصولات</button>
+        <img
+          src="/src/assets/images/cat/adele.png"
+          class="hidden sm:block absolute bottom-0 left-3 h-full w-fit"
+          alt=""
+        />
+        <img
+        src="/src/assets/images/catMobile/adele_png_by_velvethorse_ddplt62-fullview 1.png"
+        class="block sm:hidden absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+        alt=""
+      />
+      </a>
+
+      <a
+        href="/"
+        class="relative flex flex-col justify-evenly sm:justify-center rounded-lg bg-gradient-to-bl from-[#0EA5E9] to-[#334155] py-3 sm:pl-[7rem] pl-[8rem] pr-3 text-white h-[9.3rem] sm:h-[5.6rem] w-72"
+      >
+        <div
+          class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+        ></div>
+        <span class="block text-sm font-bold">
+          خریــدانواع لایسنس اورجینال
+        </span>
+        <span class="mt-1 block text-[10px] opacity-80">
+          خرید انواع لایسنس اورجینال</span
+        >
+        <button class="sm:hidden btn bg-white text-[#0EA5E9] text-xs font-medium w-28 mt-3 z-10">همه محصولات</button>
+        <img
+          src="/src/assets/images/cat/Bill-Gates.png"
+          class="hidden sm:block absolute bottom-0 left-3 h-full w-fit"
+          alt=""
+        />
+        <img
+        src="/src/assets/images/catMobile/Bill-Gates-PNG-Isolated-Pic 1.png"
+        class="block sm:hidden absolute bottom-0 left-3 h-full w-fit max-w-[9rem] z-10"
+        alt=""
+      />
+      </a>
+
+    </div>
+    <div
+      class="relative mt-7 rounded-b-xl py-4 shadow-[0_15px_21px_0_rgb(51,65,85,0.18)] bg-gradient-to-b from-[#f8fafc] to-[#ffffff]"
+    >
+      <div class="container m-auto ">
+        <h2 class="text-base font-bold">محصولات پرفـــــــروش آی گیم</h2>
+      </div>
+      <div
+        class="scrollbar-hide mt-5 grid w-full snap-proximity auto-cols-[8.8rem] grid-flow-col gap-x-3 overflow-x-auto px-4 pb-5 xl:auto-cols-[9rem]"
+      >
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/1.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/2.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/3.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/4.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/5.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/6.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/7.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/1.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/2.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/3.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/4.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+        <a href="/" class="product-card">
+          <img src="/src/assets/images/product/7.png" alt="" />
+          <span class="font-demibold mt-2 block text-xs"
+            >سی پی کالاف دیوتی موبایل</span
+          >
+          <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+        </a>
+      </div>
+    </div>
+    <div class="container m-auto mt-12">
+      <h2>
+        <a href="/" class="text-base font-bold" title="خرید درون بازی"
+          >خریـــــــد درون بــــــــازی</a
+        >
+        <span class="mr-2 text-xs font-medium">با بهترین قیمت</span>
+      </h2>
+
+      <div
+        class="scrollbar-hide mt-5 grid w-full snap-proximity auto-cols-[8.5rem] grid-flow-col gap-x-1 overflow-x-auto pb-5 xl:auto-cols-[8.5rem]"
+      >
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#2563EB] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img
+              src="/src/assets/images/product1/derwwyu-c2c404a2-2f77-4bd4-8d44-112e283952cd 2.png"
+              alt=""
+            />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >PES موبایـــــــل</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#57534E] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/download (70) 1.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >کالاف دیوتی موبایل</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#FF3333] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/pngwing 7.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >کلش آف کلنــــــــز</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#0891B2] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/pngwing 4.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >کلش رویــــــال</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#6D28D9] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/char 1.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >فـــــــری فایــــــر</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#059669] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img
+              src="/src/assets/images/product1/109312-greg-poule-orig-1-article_m-1 1.png"
+              alt=""
+            />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs"
+            >هـــــی دی</span
+          >
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#FF3333] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img
+              src="/src/assets/images/product1/958c19ff68b69157d1917a58458e8961 1.png"
+              alt=""
+            />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs">
+            بـــــــــراول استــــــارز
+          </span>
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#2563EB] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/pngegg(2) 1.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs">
+            بــــــــوم بیــــــچ
+          </span>
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#57534E] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img src="/src/assets/images/product1/png-image 1.png" alt="" />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs">
+            پابجــــــی موبایـــــل لایت
+          </span>
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#0D9488] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img
+              src="/src/assets/images/product1/fortnite_PNG177 1.png"
+              alt=""
+            />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs">
+            فـــــــورتنایت
+          </span>
+        </a>
+
+        <a href="/" class="internal-pay-card">
+          <div class="img bg-gradient-to-b from-[#C026D3] to-[#334155]">
+            <div
+              class="absolute inset-0 h-full w-full bg-[url('/src/assets/images/catbg.png')] mix-blend-luminosity"
+            ></div>
+            <img
+              src="/src/assets/images/product1/mobile_legends_wanwan_transparent_by_b_la_ze_ddn7j2l-pre 1.png"
+              alt=""
+            />
+          </div>
+          <span class="font-demibold mt-2 block text-center text-xs">
+            موبایل لجنــــــــدز
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-12">
+      <div
+        class="overflow-hidden shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] ring-1 ring-black ring-opacity-5 sm:rounded-lg grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1"
+      >
+        <div class=" md:col-span-2 lg:col-span-3 bg-gray-50 flex w-full items-start py-2.5 pl-4 pr-3 text-sm font-semibold  ">
+          <h2><a class="text-sm font-bold" href="/">گیفت کارت‌ ها</a></h2>
+          <a class="font-demibold mr-10 text-xs text-indigo-600" href="/"
+            >مشاهده همه موارد</a
+          >
+        </div>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1.png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img src="/src/assets/images/giftCard/avatar.png" alt="" />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1.png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img src="/src/assets/images/giftCard/avatar.png" alt="" />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1.png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img
+              src="/src/assets/images/giftCard/Ellipse 1 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        <a href="/" class="flex items-center justify-start px-7 py-4 border-b">
+          <div class="h-12 w-12 rounded-full">
+            <img src="/src/assets/images/giftCard/avatar.png" alt="" />
+          </div>
+          <div class="mr-2">
+            <span class="font-demibold block text-xs"
+              >سی پی کالاف دیوتی موبایل</span
+            >
+            <span class="font-regular mt-1 block text-xs"
+              >Call of Duty</span
+            >
+          </div>
+          <button
+            class="btn btn-blue mr-auto rounded text-xs font-medium"
+          >
+            خریــــد
+          </button>
+        </a>
+        </div>
+    </div>
+    <div class="container m-auto mt-10 grid md:grid-cols-3 gap-2">
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/spotify.jpg"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/trading view.png"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/yoytube.png"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="container mx-auto mt-12">
+      <h2>
+        <a class="text-base font-bold" href="">خرید اکانت پرمیوم</a>
+      </h2>
+      <p class="mt-1 text-xs font-medium">
+        خرید انواع اکانت پرمیوم به صورت قانونی و اشتراکی با مناسب ترین قیمت
+      </p>
+    </div>
+
+    <div
+      class="scrollbar-hide mt-5 grid w-full snap-proximity auto-cols-[8.8rem] grid-flow-col gap-x-3 overflow-x-auto px-4 pb-5 xl:auto-cols-[9rem]"
+    >
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/1.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/2.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/3.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/4.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/5.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/6.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/7.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/8.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/13.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/10.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/11.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/premium/12.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+    </div>
+
+    <div class="container m-auto mt-12 grid md:grid-cols-3 gap-2">
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/google play.jpg"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/Apple music.jpg"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+      <a href="/" class="xl:h-40 lg:h-32 md:h-28 h-20 overflow-hidden rounded-lg">
+        <img
+          src="/src/assets/images/banner/grammarly.jpg"
+          class="h-full w-full object-contain"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="container mx-auto mt-12">
+      <h2>
+        <a class="text-base font-bold" href="">خرید بازی اورجینــــــــال</a>
+      </h2>
+      <p class="mt-1 text-xs font-medium">
+        خرید انواع بازی اورجینال برای کامپیوتر و ایکس باکس به صورت کد دیجیتال
+      </p>
+    </div>
+
+    <div
+      class="scrollbar-hide mt-5 grid w-full snap-proximity auto-cols-[8.8rem] grid-flow-col gap-x-3 overflow-x-auto px-4 pb-5 xl:auto-cols-[9rem]"
+    >
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/1.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/2.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/3.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/4.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/5.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/6.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/7.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/8.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/9.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/10.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/11.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+      <a href="/" class="product-card">
+        <img src="/src/assets/images/original/12.jpg" alt="" />
+        <span class="font-demibold mt-2 block text-xs"
+          >سی پی کالاف دیوتی موبایل</span
+        >
+        <span class="font-regular mt-1 block text-xs">Call of Duty</span>
+      </a>
+    </div>
+
+    <div
+      class="mt-10 rounded-xl bg-white py-7 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)]"
+    >
+      <div class="container mx-auto">
+        <h2 class="flex justify-between items-center mb-5">
+          <a href="/" class="text-sm font-bold"
+            >آخرین مطالب مجله آی گیـــــــم</a
+          >
+          <a href="/" class="text-xs font-demibold text-[#1D4ED8]">
+            برو به مجله آی گیم
+          </a>
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+          <a href="/" class="relative overflow-hidden">
+            <div
+              class="font-demibold absolute left-2 top-2 md:left-4 md:top-4 z-10 rounded-3xl bg-white px-3 py-1 text-[10px] text-indigo-600"
+            >
+              1 روز قبل
+            </div>
+            <img
+              src="/src/assets/images/news/1.jpg"
+              class="h-36 w-full rounded-xl object-cover"
+              alt=""
+            />
+            <span class="mt-3 block px-3 text-xs font-bold"
+              >ساخت چند اکانت در کلش اف کلنز</span
+            >
+          </a>
+          <a href="/" class="relative overflow-hidden">
+            <div
+              class="font-demibold absolute left-2 top-2 md:left-4 md:top-4 z-10 rounded-3xl bg-white px-3 py-1 text-[10px] text-indigo-600"
+            >
+              1 روز قبل
+            </div>
+            <img
+              src="/src/assets/images/news/2.jpg"
+              class="h-36 w-full rounded-xl object-cover"
+              alt=""
+            />
+            <span class="mt-3 block px-3 text-xs font-bold"
+              >ساخت چند اکانت در کلش اف کلنز</span
+            >
+          </a>
+          <a href="/" class="relative overflow-hidden">
+            <div
+              class="font-demibold absolute left-2 top-2 md:left-4 md:top-4 z-10 rounded-3xl bg-white px-3 py-1 text-[10px] text-indigo-600"
+            >
+              1 روز قبل
+            </div>
+            <img
+              src="/src/assets/images/news/3.jpg"
+              class="h-36 w-full rounded-xl object-cover"
+              alt=""
+            />
+            <span class="mt-3 block px-3 text-xs font-bold"
+              >ساخت چند اکانت در کلش اف کلنز</span
+            >
+          </a>
+          <a href="/" class="relative overflow-hidden">
+            <div
+              class="font-demibold absolute left-2 top-2 md:left-4 md:top-4 z-10 rounded-3xl bg-white px-3 py-1 text-[10px] text-indigo-600"
+            >
+              1 روز قبل
+            </div>
+            <img
+              src="/src/assets/images/news/4.jpg"
+              class="h-36 w-full rounded-xl object-cover"
+              alt=""
+            />
+            <span class="mt-3 block px-3 text-xs font-bold"
+              >ساخت چند اکانت در کلش اف کلنز</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto my-10 text-sm">
+      <p class="my-2">
+        اینترنت به عنوان مبدا آغاز تحولات شگفت انگیز در ارتباطات، توانسته در
+        تمام تار و پود زندگی ما تغییرات عمدتا مفیدی را رقم بزند. ارائه ی خدمات
+        نوین و متناسب با نیازهای کاربران نیز از الزامات این پیشرفت است.
+        <strong>فروشگاه آنلاین آی گیم</strong>، با تمرکز بر حوزه
+        <strong>گیم</strong> و <strong>ارائه خدمات متنوع</strong> در این حوزه،
+        سعی دارد خدمات مورد نیاز کاربران در برخی زمنه های دیگر را نیز تامین کند.
+      </p>
+
+      <p class="my-2">
+        در همین راستا،
+        <a
+          class="font-demibold"
+          href="https://igame.ir/"
+          old-href="https://igame.ir/"
+          >فروشگاه آی گیم</a
+        >
+        خدمات خود را در پنج دسته زیر به کاربران خود ارائه می دهد:
+      </p>
+
+      <ul class="font-demibold my-2 flex flex-col">
+        <li>بسته های درون بازی(موبایل)</li>
+        <li>بازی اورجینال</li>
+        <li>گیفت کارت</li>
+        <li>اکانت پرمیوم</li>
+        <li>لایسنس اورجینال</li>
+      </ul>
+
+      <p class="my-2"><strong>مزایای استفاده از لایسنس‌های اورجینال</strong></p>
+
+      <p class="my-2">
+        استفاده از لایسنس‌های اورجینال همیشه برای کاربران یک قابلیت فوق‌العاده
+        به شمار می‌رود. در واقع زمانی که از لایسنس‌های اورجینال در سرویس‌ها و
+        نرم‌افزارهای مختلف استفاده می‌کنید، علاوه بر رعایت حقوق تولیدکننده، از
+        امکانات بیشتری برخوردار خواهید شد. استفاده از نسخه اورجینال سرویس‌ها به
+        کاربران کمک می‌کند تا استفاده بهتری از سرویس مورد نظر خود داشته باشند و
+        همه چیز را به شکل قانونی پیش ببرند. کاربرانی که لایسنس قانونی خریداری
+        می‌کنند، در صورت بروز مشکل می‌توانند به‌سادگی با تیم پشتیبانی سرویس مورد
+        نظر خود ارتباط برقرار کرده و در کوتاه‌ترین زمان ممکن مشکل خود را حل کنند
+        و در صورت نیاز از تیم پشتیبانی خسارت دریافت کنند.
+      </p>
+
+      <p class="my-2">
+        <strong>تجربه لذت‌بخش از گیم با بازی‌های اورجینال</strong>
+      </p>
+
+      <p class="my-2">
+        یکی از نیازهای اصلی گیمرها دسترسی به نسخه اورجینال بازی‌های ویدئویی است.
+        استفاده از نسخه‌های اورجینال انواع بازی‌ها به گیمر کمک می‌کند تا تجربه
+        لذت‌بخش‌تری از دنیای گیم داشته باشد. بازی‌های اورجینال دارای امکانات
+        بیشتری نسبت به نسخه‌های کرک شده هستند و بهینه‌سازی شده‌اند تا به سیستم
+        کاربران آسیبی وارد نکنند. از سوی دیگر با استفاده از بازی‌های اورجینال
+        می‌توان انجام بازی به شکل آنلاین را تجربه کرد. گیمرهایی که از نسخه
+        اورجینال یک بازی برخوردار هستند، می‌توانند بدون ریسک بن شدن آنلاین شود و
+        به‌صورت مولتی پلیر بازی کنند.
+      </p>
+
+      <p class="my-2">
+        <strong
+          >خریدهای درون بازی؛ راهی برای پیشرفت سریع‌تر در دنیای گیم</strong
+        >
+      </p>
+
+      <p class="my-2">
+        گیمرها همیشه به دنبال راه‌هایی برای پیشرفت سریع‌تر در بازی‌ها هستند. این
+        مساله در بازی‌های آنلاین و چندنفره و فضاهای رقابتی بیشتر احساس می‌شود.
+        یکی از مواردی که به پیشرفت سریع گیمرها کمک می‌کند، خریدهای درون بازی
+        است. خریدهای درون بازی به گیمر کمک می‌کنند تا آیتم‌ها مورد نظر خود را با
+        زحمت کمتری دریافت کند و در مقابل رقبا عملکرد بهتری داشته باشد. در بیشتر
+        بازی‌های ویدئویی می‌توان آیتم‌های ویژه‌ای را خریداری کرد که به دست آوردن
+        آن‌ها برای بیشتر گیمرها ممکن نیست.
+      </p>
+
+      <p class="my-2">
+        <strong>خرید گیفت کارت؛ راهی برای پرداخت‌های آنلاین</strong>
+      </p>
+
+      <p class="my-2">
+        در سراسر دنیا راه‌های مختلفی برای پرداخت آنلاین وجود دارند که هرکدام
+        ویژگی‌های منحصربه‌فرد خود را دارند. اما در میان تمام روش‌های پرداخت، یک
+        روش بسیار کاربردی و محبوب وجود دارد. این روش چیزی نیست جز استفاده از
+        انواع گیفت کارت‌ها. با استفاده از گیفت کارت‌ها می‌توان به‌سادگی
+        پرداخت‌های آنلاین را تکمیل کرد و محصولات متنوعی از کالاهای فیزیکی گرفته
+        تا پول درون بازی‌ها خریداری کرد. استفاده از گیفت کارت‌ها بسیار ساده است
+        و نیازی به حساب‌های بانکی بین‌المللی و احراز هویت کاربر ندارد. امروزه
+        تمام پلتفرم‌ها و فروشگاه‌‌های معتبر، از گیفت کارت‌ها برای پرداخت
+        هزینه‌ها استقبال می‌کنند.
+      </p>
+
+      <p class="my-2">
+        <strong
+          >اکانت پرمیوم راهی برای استفاده از تمام ظرفیت‌های سرویس‌ها</strong
+        >
+      </p>
+
+      <p class="my-2">
+        به جرات می‌توان گفت که 99درصد سرویس‌های هوشمند و نرم‌افزارها دارای بخش
+        فروشی یا همان اکانت پرمیوم هستند. سرویس‌ها و نرم‌افزارها در حالت‌های
+        رایگان و پرمیوم دردسترس کاربران قرار می‌گیرند. بخش رایگان سرویس‌ها
+        می‌تواند تا حدود نیازهای کاربران را برطرف کند، اما دارای محدودیت‌های
+        مختلفی در استفاده است و شامل آیتم‌های ویژه نیست. با این حال می‌توان
+        آیتم‌های ویژه و امکانات بیشتری را با داشتن اکانت‌های پرمیوم به دست آورد.
+        استفاده از اکانت‌های پرمیوم باعث می‌شوند از تمام ظرفیت‌های سرویس‌ها بدون
+        هیچ محدودیتی استفاده کنید و از مزایا و امکانات خاصی برخوردار شوید.
+      </p>
+
+      <p class="my-2">
+        گستره‌ی سرویس های ارائه شده در تمام زمینه در دنیا آنقدر وسیع و متنوع است
+        که برای هیچ کاربر ایرانی قابل چشم پوشی نیست. علی‌رغم نیازها و تمایلات
+        کاربران ایرانی برای استفاده از خدمات ارائه شده توسط ارائه دهندگان بین
+        المللی، محدودیتهای خارجی و داخلی، توان استفاده کاربران از این خدمات را
+        به حداقل رسانده است.
+      </p>
+
+      <p class="my-2">
+        یکی از پایه ای ترین راهکار هایی که به کاربران ارائه می‌گردد امکان
+        <a
+          class="font-demibold"
+          href="https://igame.ir/giftcard/"
+          old-href="https://igame.ir/giftcard/"
+          >خرید گیفت کارت</a
+        >
+        به صورت ریالی و استفاده از خدمات مختلف بین المللی است. در کنار این
+        سرویس، ارائه کلیه خدمات مورد نیاز گیمرها در اولویت کاری
+        <strong>آی گیم</strong> است. می توان گفت که
+        <a
+          class="font-demibold"
+          href="https://igame.ir/dlc/"
+          old-href="https://igame.ir/dlc/"
+          >خرید درون بازی</a
+        >
+        به عنوان پر مخاطب ترین نیاز این روزهای بازار گیم، بزرگترین بخش از خدمات
+        این فروشگاه را تشکیل می دهد.
+        <a
+          class="font-demibold"
+          href="https://igame.ir/game"
+          old-href="https://igame.ir/game"
+          >خرید بازی</a
+        >
+        های اورجینال همزمان با ارائه آن در تمام دنیا،
+        <strong>خرید اکانت پرمیوم</strong> سرویسهای مختلف و
+        <strong>لایسنس اورجینال</strong> انواع نرم افزارهای کاربردی از دیگر
+        خدمات موجود در آی گیم است.
+      </p>
+
+      <p class="my-2">
+        ما در آی گیم بر آنیم تا با ارائه راهکارها و تسهیل برخی از روشها، بتوانیم
+        تا به کاربران ایرانی کمک کنیم تا بتوانند همچون سایر مردم دنیا از این
+        امکانات بهره مند شوند. کلیه خدمات ارائه شده در
+        <strong>فروشگاه اینترنتی آی گیم</strong> از منابع تراز اول و بدون واسطه
+        تامین و در اختیار کاربران قرار می‌گیرد. هر چند اینکار نیز هزینه هایی به
+        دنبال دارد، اما تمام سعی ما در فروشگاه آی گیم بر آن است تا با راهکارهایی
+        ابداعی از تحمیل این هزینه بر کاربران بکاهیم.
+      </p>
+
+      <p class="my-2">
+        شما گیمر هستید و نیاز به <strong>خرید بازی</strong> یا
+        <strong>بسته های درون بازی</strong> دارید؟ می خواهید بدون محدودیت های
+        ریالی از خدمات و کالاهای ارائه شده در فروشگاه های معتبر بین المللی خرید
+        کنید؟ می خواهید بدون دغدغه <strong>گیفت کارت</strong> بخرید و استفاده
+        کنید؟ از تبلیغات و محدودیت های سرویس‌ها و نرم افزارها خسته شده اید و به
+        دنبال
+        <a
+          class="font-demibold"
+          href="https://igame.ir/proacc/"
+          old-href="https://igame.ir/proacc/"
+          >خرید اکانت پرمیوم</a
+        >
+        یا
+        <a
+          class="font-demibold"
+          href="https://igame.ir/prolicense"
+          old-href="https://igame.ir/prolicense"
+          >لایسنس اورجینال</a
+        >
+        هستید؟ ما در <strong>فروشگاه آنلاین آی گیم</strong> راهکار های کم هزینه،
+        سریع و ساده ای را به شما پیشنهاد می کنیم که از قبول آنها پشیمان نخواهید
+        شد.
+      </p>
+    </div>
+
+    <div class="relative w-full">
+      <hr class="absolute bottom-[50%] left-0 w-full" />
+      <div class="container relative mx-auto text-center md:text-left">
+        <div
+          class="left-0 inline-flex items-center justify-center rounded-3xl border border-[#D1D5DB] bg-white px-11 py-1"
+        >
+          <a
+            href=""
+            class="mx-1 flex h-[1.5rem] w-[1.5rem] items-center justify-center rounded-full bg-[#EBECEE]"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2681 3.17285C10.8255 3.17285 10.4664 3.53195 10.4664 3.97456C10.4664 4.41718 10.8255 4.77628 11.2681 4.77628C11.7107 4.77628 12.0698 4.41718 12.0698 3.97456C12.0698 3.53195 11.7107 3.17285 11.2681 3.17285Z"
+                fill="#334155"
+              ></path>
+              <path
+                d="M7.70714 4.19995C5.85151 4.19995 4.34326 5.70985 4.34326 7.56381C4.34326 9.41777 5.85318 10.9277 7.70714 10.9277C9.5611 10.9277 11.071 9.41777 11.071 7.56381C11.071 5.70985 9.5611 4.19995 7.70714 4.19995ZM7.70714 9.72009C6.51793 9.72009 5.55251 8.75302 5.55251 7.56548C5.55251 6.37794 6.5196 5.41087 7.70714 5.41087C8.89468 5.41087 9.86173 6.37794 9.86173 7.56548C9.86173 8.75302 8.89468 9.72009 7.70714 9.72009Z"
+                fill="#334155"
+              ></path>
+              <path
+                d="M10.3776 14.3952H4.92259C2.65942 14.3952 0.818848 12.5546 0.818848 10.2914V4.83644C0.818848 2.57327 2.65942 0.732666 4.92259 0.732666H10.3776C12.6408 0.732666 14.4814 2.57327 14.4814 4.83644V10.2914C14.4814 12.5546 12.6408 14.3952 10.3776 14.3952ZM4.92259 2.01875C3.36927 2.01875 2.10492 3.28312 2.10492 4.83644V10.2914C2.10492 11.8448 3.36927 13.1091 4.92259 13.1091H10.3776C11.9309 13.1091 13.1953 11.8448 13.1953 10.2914V4.83644C13.1953 3.28145 11.9309 2.01875 10.3776 2.01875H4.92259Z"
+                fill="#334155"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href=""
+            class="mx-1 flex h-[1.5rem] w-[1.5rem] items-center justify-center rounded-full bg-[#EBECEE]"
+          >
+            <svg
+              width="13"
+              height="11"
+              viewBox="0 0 13 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.8565 1.58896C12.4523 1.77102 12.0063 1.88292 11.5721 1.95474C11.7792 1.91967 12.0815 1.54553 12.2034 1.39521C12.3888 1.16472 12.5424 0.900822 12.6293 0.616882C12.641 0.595169 12.6493 0.566776 12.6259 0.550073C12.5976 0.538382 12.5792 0.545062 12.5575 0.555084C12.0714 0.815641 11.5687 1.00438 11.0342 1.13799C10.9892 1.14969 10.9574 1.138 10.929 1.1096C10.8839 1.0595 10.8421 1.01273 10.7954 0.972643C10.5699 0.780566 10.3294 0.631911 10.0571 0.520005C9.69971 0.374694 9.31054 0.312896 8.92472 0.33795C8.55058 0.363003 8.18315 0.46823 7.85077 0.641934C7.51839 0.815639 7.2211 1.05782 6.98392 1.35011C6.74007 1.65243 6.558 2.00819 6.46613 2.38566C6.37761 2.74977 6.38431 3.11054 6.43943 3.47967C6.44778 3.54146 6.44275 3.54982 6.38597 3.54147C4.29316 3.2308 2.55777 2.48086 1.14976 0.875766C1.08796 0.805616 1.05625 0.805616 1.00614 0.880777C0.389822 1.80442 0.688788 3.28926 1.45877 4.01748C1.56065 4.11436 1.66754 4.21123 1.78111 4.30142C1.73936 4.30978 1.22658 4.25466 0.77061 4.01748C0.708811 3.97907 0.678774 4.00078 0.673764 4.07093C0.668753 4.17114 0.67708 4.26301 0.690442 4.37158C0.809029 5.30858 1.45711 6.17376 2.34567 6.51115C2.4509 6.55625 2.56782 6.59466 2.68139 6.61303C2.47929 6.65813 2.27048 6.68986 1.69091 6.64309C1.61909 6.62973 1.59071 6.66481 1.6191 6.73496C2.05504 7.92417 2.99704 8.27659 3.70188 8.47869C3.79542 8.49539 3.89061 8.49539 3.98582 8.5171C3.98081 8.52545 3.97415 8.52546 3.96914 8.53381C3.73531 8.88957 2.92524 9.15513 2.54776 9.28708C1.8613 9.52759 1.11304 9.63449 0.38816 9.56267C0.272913 9.54597 0.247855 9.54764 0.21612 9.56267C0.184386 9.58271 0.212772 9.60944 0.249517 9.63951C0.396498 9.73638 0.546809 9.82323 0.698801 9.90674C1.15979 10.1506 1.64084 10.346 2.14191 10.4846C4.73579 11.2012 7.65869 10.675 9.60619 8.73925C11.1361 7.21933 11.6723 5.12318 11.6723 3.02536C11.6723 2.94352 11.7692 2.89842 11.8276 2.855C12.2251 2.55603 12.5458 2.19859 12.8431 1.79941C12.9099 1.70921 12.9099 1.62904 12.9099 1.59731V1.58562C12.9099 1.55221 12.9099 1.56223 12.8581 1.58562L12.8565 1.58896Z"
+                fill="#334155"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href=""
+            class="mx-1 flex h-[1.5rem] w-[1.5rem] items-center justify-center rounded-full bg-[#EBECEE]"
+          >
+            <svg
+              width="14"
+              height="10"
+              viewBox="0 0 14 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.425 2.91532C13.425 1.37035 12.1724 0.117676 10.6274 0.117676H3.47209C1.92712 0.117676 0.674438 1.37035 0.674438 2.91532V6.24409C0.674438 7.78906 1.92712 9.04174 3.47209 9.04174H10.6274C12.1724 9.04174 13.425 7.78906 13.425 6.24409V2.91532ZM9.21768 4.82941L6.00917 6.41613C5.8839 6.48461 5.45635 6.39275 5.45635 6.25078V2.99215C5.45635 2.84684 5.88724 2.75665 6.01251 2.82847L9.0841 4.4987C9.21271 4.57219 9.34796 4.75759 9.21768 4.82941Z"
+                fill="#334155"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pb-0 pt-10 lg:pb-5">
+      <div
+        class="flex w-full flex-col items-start justify-start lg:container lg:mx-auto lg:flex-row lg:items-end lg:justify-between"
+      >
+        <div class="flex">
+          <ul class="hidden text-xs font-medium leading-6 lg:inline-block">
+            <li class="h-8">
+              <span class="block text-sm text-blue-600"
+                >محبوب ترین آیتمهای درون بازی</span
+              >
+            </li>
+            <li>
+              <a href=""> سی پی کالاف دیوتی </a>
+            </li>
+            <li>
+              <a href=""> خرید جم کلش آف کلنز </a>
+            </li>
+            <li>
+              <a href=""> یوسی پابجی </a>
+            </li>
+            <li>
+              <a href=""> جم فری فایر </a>
+            </li>
+            <li>
+              <a href=""> جم کلش رویال </a>
+            </li>
+            <li>
+              <a href=""> جم و سکه هی دی </a>
+            </li>
+            <li>
+              <a href=""> الماس براول استارز </a>
+            </li>
+          </ul>
+          <ul
+            class="mr-5 hidden text-xs font-medium leading-6 sm:inline-block xl:mr-10"
+          >
+            <li class="h-8">
+              <span class="block text-sm text-blue-600"
+                >محبوبترین گیفت کارت ها</span
+              >
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت گوگل پلی </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت پلی استیشن </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت اپل </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت استیم </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت پلی استیشن پلاس </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت XBox </a>
+            </li>
+            <li>
+              <a href=""> الماس براول استارز </a>
+            </li>
+          </ul>
+          <ul
+            class="mr-5 hidden text-xs font-medium leading-6 sm:inline-block xl:mr-10"
+          >
+            <li class="h-8">
+              <span class="block text-sm text-blue-600"
+                >محبوب ترین آیتمهای درون بازی</span
+              >
+            </li>
+            <li>
+              <a href=""> سی پی کالاف دیوتی </a>
+            </li>
+            <li>
+              <a href=""> خرید جم کلش آف کلنز </a>
+            </li>
+            <li>
+              <a href=""> یوسی پابجی </a>
+            </li>
+            <li>
+              <a href=""> جم فری فایر </a>
+            </li>
+            <li>
+              <a href=""> جم کلش رویال </a>
+            </li>
+            <li>
+              <a href=""> جم و سکه هی دی </a>
+            </li>
+            <li>
+              <a href=""> الماس براول استارز </a>
+            </li>
+          </ul>
+          <ul class="mr-5 text-xs font-medium leading-6 xl:mr-10">
+            <li class="h-8">
+              <span class="block text-sm text-blue-600 sm:hidden"
+                >فروشگاه آی گیم</span
+              >
+            </li>
+            <li>
+              <a href=""> خرید درون بازی </a>
+            </li>
+            <li>
+              <a href=""> خرید گیفت کارت </a>
+            </li>
+            <li>
+              <a href=""> خرید انواع بازی اورجینال </a>
+            </li>
+            <li>
+              <a href=""> خرید بازی </a>
+            </li>
+            <li>
+              <a href=""> خرید اکانت پرمیوم </a>
+            </li>
+            <li>
+              <a href=""> خرید لایسنس اورجینال </a>
+            </li>
+            <li>
+              <a href=""> خرید از گوگل پلی و اپ استور </a>
+            </li>
+          </ul>
+          <ul class="mr-5 text-xs font-medium leading-6 xl:mr-10">
+            <li class="h-8"></li>
+            <li>
+              <a href=""> درباره ما </a>
+            </li>
+            <li>
+              <a href=""> همکاری با آی گیم </a>
+            </li>
+            <li>
+              <a href=""> تماس با ما </a>
+            </li>
+            <li>
+              <a href=""> آموزش </a>
+            </li>
+            <li>
+              <a href=""> راهنمای خرید </a>
+            </li>
+            <li>
+              <a href=""> قوانین و مقررات </a>
+            </li>
+            <li>
+              <a href=""> ثبت شکایات </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="mt-5 flex w-full flex-row-reverse items-center justify-between bg-[#0F172A] p-5 text-white lg:mt-0 lg:w-fit lg:flex-col lg:bg-inherit lg:p-0 lg:text-inherit"
+        >
+          <div class="flex items-center">
+            <div>
+              <strong class="block text-sm font-medium" dir="ltr">
+                ۰۲۱ - ۹۱۰۰۵۰۶۰
+              </strong>
+              <span class="block text-xs font-light text-gray-500"
+                >پشتیبانی ۲۴ ساعته</span
+              >
+            </div>
+            <div
+              class="mr-2 flex items-center justify-center rounded-full bg-blue-600 p-2"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.3895 16.3265C19.3895 16.6295 19.3222 16.9408 19.1791 17.2437C19.0361 17.5467 18.8509 17.8328 18.6069 18.102C18.1946 18.5564 17.7402 18.8846 17.2269 19.095C16.722 19.3053 16.1751 19.4147 15.5861 19.4147C14.7278 19.4147 13.8106 19.2128 12.8429 18.8004C11.8752 18.3881 10.9075 17.8328 9.94825 17.1344C8.98057 16.4275 8.06338 15.645 7.18825 14.7783C6.32155 13.9031 5.53899 12.9859 4.84057 12.0267C4.15057 11.0674 3.59521 10.1081 3.1913 9.15728C2.7874 8.19801 2.58545 7.28081 2.58545 6.40569C2.58545 5.8335 2.68642 5.28655 2.88838 4.78167C3.09033 4.26838 3.41008 3.79716 3.85606 3.37642C4.3946 2.8463 4.98362 2.58545 5.6063 2.58545C5.84191 2.58545 6.07752 2.63594 6.28789 2.73691C6.50667 2.83789 6.70021 2.98935 6.85167 3.20813L8.80386 5.95972C8.95533 6.17008 9.06472 6.36362 9.14045 6.54874C9.21618 6.72545 9.25825 6.90216 9.25825 7.06203C9.25825 7.26399 9.19935 7.46594 9.08155 7.65947C8.97216 7.85301 8.81228 8.05496 8.61033 8.25691L7.97081 8.92167C7.87825 9.01423 7.83618 9.12362 7.83618 9.25825C7.83618 9.32557 7.8446 9.38447 7.86142 9.45179C7.88667 9.51911 7.91191 9.5696 7.92874 9.62008C8.08021 9.89777 8.34106 10.2596 8.7113 10.6972C9.08996 11.1347 9.49386 11.5807 9.93142 12.0267C10.3858 12.4726 10.8234 12.885 11.2694 13.2636C11.7069 13.6339 12.0687 13.8863 12.3548 14.0378C12.3969 14.0546 12.4474 14.0798 12.5063 14.1051C12.5736 14.1303 12.6409 14.1387 12.7167 14.1387C12.8597 14.1387 12.9691 14.0883 13.0617 13.9957L13.7012 13.3646C13.9115 13.1542 14.1135 12.9944 14.307 12.8934C14.5006 12.7756 14.6941 12.7167 14.9045 12.7167C15.0643 12.7167 15.2326 12.7503 15.4178 12.8261C15.6029 12.9018 15.7964 13.0112 16.0068 13.1542L18.792 15.1317C19.0108 15.2831 19.1623 15.4598 19.2548 15.6702C19.339 15.8806 19.3895 16.0909 19.3895 16.3265Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M14.5336 7.46578H18.5726M14.5336 7.46578V3.42676V7.46578Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-x-2 lg:mt-5">
+            <a
+              href=""
+              class="block overflow-hidden rounded-lg border bg-white p-1"
+            >
+              <img src="/src/assets/images/links/12.svg" alt="" />
+            </a>
+
+            <a
+              href=""
+              class="block overflow-hidden rounded-lg border bg-white p-1"
+            >
+              <img src="/src/assets/images/links/13.svg" alt="" />
+            </a>
+
+            <a
+              href=""
+              class="block overflow-hidden rounded-lg border bg-white p-1"
+            >
+              <img src="/src/assets/images/links/2.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
