@@ -23,14 +23,9 @@ body {
   transform: rotate(-10deg)
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
 
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+
+/*  */
 
 .closeModal{
   opacity: 0;
@@ -73,6 +68,16 @@ body {
   .font-heavy {
     font-variation-settings: "wght" 1000;
   }
+
+  .no-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
 }
 
 .custom-container{

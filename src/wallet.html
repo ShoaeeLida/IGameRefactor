@@ -170,7 +170,7 @@
     <!-- navigation -->
     <nav class="container mx-auto hidden sm:flex">
       <ul
-        class="flex flex-1 snap-proximity overflow-x-auto whitespace-nowrap py-4 pb-5 text-sm text-slate-500 scrollbar-hide"
+        class="flex flex-1 snap-proximity overflow-x-auto whitespace-nowrap py-4 pb-5 text-sm text-slate-500 no-scroll"
       >
         <li class="ml-3 flex pl-3 font-medium text-blue-700">
           <a class="tracking-tight" href="/" title="محصولات آی گیم"
@@ -328,7 +328,7 @@
         </div>
       </div>
       <ul
-        class="font-regular mt-5 flex w-full snap-proximity flex-row items-stretch overflow-x-auto whitespace-nowrap pb-2 text-xs scrollbar-hide md:snap-none md:flex-col md:pb-0 md:text-sm"
+        class="font-regular mt-5 flex w-full snap-proximity flex-row items-stretch overflow-x-auto whitespace-nowrap pb-2 text-xs no-scroll md:snap-none md:flex-col md:pb-0 md:text-sm"
       >
         <li
           class="mx-2 my-2 flex items-center rounded-md bg-white px-4 py-2 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] md:mx-0 md:p-0 md:shadow-none"
@@ -557,9 +557,10 @@
               </div>
 
               <!-- transactions -->
-              <div class="col-span-8 lg:col-span-5 xl:col-span-6">
+              <div class="col-span-8 lg:col-span-5 xl:col-span-6 pb-10">
                 <span class="mb-3 block text-sm font-bold">تراکنش ها</span>
 
+                <!-- if transaction exist -->
                 <div
                   class="mb-2 flex flex-1 flex-wrap items-center rounded-lg bg-white px-4 py-5 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)] xl:flex-nowrap"
                 >
@@ -762,6 +763,18 @@
                       پرداخت تکمیل شده
                     </div>
                   </div>
+                </div>
+                <!-- if no transaction -->
+                <div class="flex flex-col justify-center items-center rounded-lg bg-white px-4 py-5 shadow-[0_6px_21px_0_rgb(51,65,85,0.2)]">
+                  <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2">
+                    <path d="M26.5004 2.65002C39.6724 2.65002 50.3504 13.328 50.3504 26.5C50.3504 39.672 39.6724 50.35 26.5004 50.35C13.3284 50.35 2.65039 39.672 2.65039 26.5C2.65039 13.328 13.3284 2.65002 26.5004 2.65002ZM26.5004 6.22697C15.3039 6.22697 6.22734 15.3035 6.22734 26.5C6.22734 37.6965 15.3039 46.7731 26.5004 46.7731C37.6969 46.7731 46.7734 37.6965 46.7734 26.5C46.7734 15.3035 37.6969 6.22697 26.5004 6.22697ZM26.5004 30.0709C30.3903 30.0709 34.0367 31.6326 36.7091 34.3524C37.4014 35.057 37.3914 36.1893 36.6869 36.8816C35.9823 37.5739 34.85 37.5639 34.1577 36.8594C32.1511 34.8172 29.4208 33.6479 26.5004 33.6479C23.5735 33.6479 20.8377 34.8224 18.8302 36.8725C18.1391 37.5783 17.0068 37.5901 16.301 36.8991C15.5953 36.208 15.5834 35.0756 16.2745 34.3699C18.9482 31.6396 22.6019 30.0709 26.5004 30.0709ZM19.3476 18.7515C20.9929 18.7515 22.3267 20.0853 22.3267 21.7306C22.3267 23.3759 20.9929 24.7097 19.3476 24.7097C17.7023 24.7097 16.3685 23.3759 16.3685 21.7306C16.3685 20.0853 17.7023 18.7515 19.3476 18.7515ZM33.6553 18.7515C35.3007 18.7515 36.6344 20.0853 36.6344 21.7306C36.6344 23.3759 35.3007 24.7097 33.6553 24.7097C32.01 24.7097 30.6763 23.3759 30.6763 21.7306C30.6763 20.0853 32.01 18.7515 33.6553 18.7515Z" fill="#334155"/>
+                    </g>
+                    </svg>
+                     
+                  <p class="mt-2 font-medium text-sm text-slate-700/30">
+                    هیچ تراکنشـــــــــی پیدا نشد
+                  </p>
                 </div>
               </div>
             </div>
